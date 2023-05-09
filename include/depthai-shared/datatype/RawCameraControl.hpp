@@ -240,6 +240,8 @@ struct RawCameraControl : public RawBuffer {
     uint16_t wbColorTemp;    // 1000 .. 12000
     uint8_t lowPowerNumFramesBurst;
     uint8_t lowPowerNumFramesDiscard;
+    uint32_t width;
+    uint32_t height;
 
     void setCommand(Command cmd, bool value = true) {
         uint64_t mask = 1ull << (uint8_t)cmd;
