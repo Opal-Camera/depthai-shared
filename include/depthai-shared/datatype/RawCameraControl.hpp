@@ -292,7 +292,9 @@ struct RawCameraControl : public RawBuffer {
                       chromaDenoise,
                       wbColorTemp,
                       lowPowerNumFramesBurst,
-                      lowPowerNumFramesDiscard);
+                      lowPowerNumFramesDiscard,
+                      width,
+                      height);
 };
 
 }  // namespace dai
