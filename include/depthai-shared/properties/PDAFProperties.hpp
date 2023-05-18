@@ -8,9 +8,9 @@ namespace dai {
  * Properties for UVC node
  */
 struct PDAFProperties : PropertiesSerializable<Properties, PDAFProperties> {
-    int dummy;
+    uint32_t numFramesToSkip;
 };
 
-DEPTHAI_SERIALIZE_EXT(PDAFProperties, dummy);
+DEPTHAI_SERIALIZE_EXT(PDAFProperties, numFramesToSkip);
 
 }  // namespace dai
