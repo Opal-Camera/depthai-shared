@@ -24,7 +24,6 @@ struct DetectionNetworkProperties : PropertiesSerializable<NeuralNetworkProperti
     std::vector<float> anchors;
     std::map<std::string, std::vector<int>> anchorMasks;
     float iouThreshold;
-    int numFramesToSkip;
 };
 
 DEPTHAI_SERIALIZE_EXT(DetectionNetworkProperties,
