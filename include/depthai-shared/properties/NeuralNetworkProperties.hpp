@@ -29,8 +29,10 @@ struct NeuralNetworkProperties : PropertiesSerializable<Properties, NeuralNetwor
      * Number of NCE (Neural Compute Engine) per inference thread. 0 = auto
      */
     std::uint32_t numNCEPerThread = 0;
+
+    int numFramesToSkip;
 };
 
-DEPTHAI_SERIALIZE_EXT(NeuralNetworkProperties, blobSize, blobUri, numFrames, numThreads, numNCEPerThread);
+DEPTHAI_SERIALIZE_EXT(NeuralNetworkProperties, blobSize, blobUri, numFrames, numThreads, numNCEPerThread, numFramesToSkip);
 
 }  // namespace dai
