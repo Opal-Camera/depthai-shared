@@ -13,9 +13,10 @@ struct PDAFProperties : PropertiesSerializable<Properties, PDAFProperties> {
     uint8_t refocus_bounds_max;
     uint8_t refocus_reset_value;
     float pdaf_filter_threshold;
+    uint8_t defaultFocusValue;
 };
 
 DEPTHAI_SERIALIZE_EXT(PDAFProperties, numFramesToSkip, refocus_bounds_min,
-    refocus_bounds_max, refocus_reset_value, pdaf_filter_threshold);
+    refocus_bounds_max, refocus_reset_value, pdaf_filter_threshold, defaultFocusValue);
 
 }  // namespace dai
